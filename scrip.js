@@ -14,25 +14,29 @@ const playAgainBtn = document.querySelector('button');
 playAgainBtn.style.visibility = 'hidden';
 playAgainBtn.addEventListener('click', playAgain);
 //array contaning colors
+
 let colors = [
-    '#33ff33',
-    '#33ff33',
-    '#ff944d',
-    '#ff944d', 
-    '#00d0f7',
-    '#00d0f7',
-    '#00511f',
-    '#00511f',
-    '#ff4dff',
-    '#ff4dff',
-    '#ff1a1a',
-    '#ff1a1a',
-    '#dddddd',
-    '#dddddd', 
-    '#000992',
-    '#000992'
+    '#EEAEAD',
+    '#EEAEAD',
+    '#EF3A5D',
+    '#EF3A5D',
+    '#71C1E8',
+    '#71C1E8',
+    '#C1FF72',
+    '#C1FF72',
+    '#FF914D',
+    '#FF914D',
+    '#5C7C80',
+    '#5C7C80',
+    '#5E17EB',
+    '#5E17EB',
+    '#00BF63',
+    '#00BF63'
+    
 
 ]
+
+
 
 function selectColor(){
     //0-15
@@ -41,11 +45,12 @@ function selectColor(){
     const random = Math.floor(Math.random() * colors.length);
     //goes into array to select random color
     const selected = colors[random];
-    //use spice to remove selected color, using 1 to remove single value
+    //use spice to remove selected color from the array, using 1 to remove single value
     colors.splice(random, 1);
     return selected;
 }
 
+//loop testing that when i less 16, create square
 while (i < numberOfSquares) {
     const square = document.createElement('li');
  

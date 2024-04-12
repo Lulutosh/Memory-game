@@ -2,12 +2,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     letter-spacing: 2px;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(134, 141, 137, 1) 20%, rgba(0, 0, 0, 1) 100%);
 }
 #score{
     font-size: 2rem;
     font-weight: bold;
-    margin: 1rem 0;
+   margin: 0 0 0 80%;
+     font-size: 20px;
+     font-family: sans-serif;
+     color: #ffff;
+}
+h1{
+   font-size: 3em;
+        font-family: "Bungee Outline", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    color: rgb(56, 56, 197);
+   animation: glow 1s ease-in-out infinite;
+   
+
+       
+    
+
 }
 button{
     border-radius: 5px;
@@ -27,9 +46,16 @@ ul{
 }
 li{
     list-style: none;
-    border: 0.5px solid rgb(2, 0, 36);
+    border: 0.5px solid rgb(75, 143, 199);
     border-radius: 10px;
     cursor: pointer;
+}
+
+.instructions{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #ffff;
+
 }
 
 .shake{
@@ -37,6 +63,9 @@ li{
 }
 .pop{
     animation: pop 0.5s;
+}
+.square-container{
+    margin-top: -4%;
 }
 
 @keyframes shake {
@@ -54,4 +83,24 @@ li{
           transform: scale(1);
       }
   
+}
+@keyframes glow{
+    from{
+       text-shadow: 0 0 20px #ffffff,
+       0 0 20px #fff,
+       0 0 30px #0049e6,
+       0 0 40px #0049e6,
+       0 0 50px #0049e6,
+       0 0 60px #0049e6,
+       0 0 100px #0049e6;
+    }
+    to{
+         text-shadow: 0 0 30px #fff,
+         0 0 30px #4da9ff,
+         0 0 40px #4da9ff,
+         0 0 50px #4da9ff,
+         0 0 60px #4da9ff,
+         0 0 70px #4da9ff,
+         0 0 100px #ff4da6;
+    }
 }

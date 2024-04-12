@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scrip.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@200;400;700&family=Bungee+Outline&family=Bungee+Shade&family=Bungee+Spice&family=Prompt:wght@900&family=Rubik+Lines&family=Train+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Memory game</title>
+    <title>Color Memory Game</title>
 </head>
 <body>
-    <h1>Memory Game</h1>
-    <p id="score">0</p>
-    <button>PLAY AGAIN</button>
-    <ul id="squares">
-        
-    </ul>
+    <div class="heading-container">
+    <h1>Color Memory Game</h1>
+    <p class="instructions"> Flip any two cards and get a score when they match</p>
+   <span>
+       <p id="score">Score: 0</p>
+   </span>
+   </div>
+
+    <div class="square-container">
+    <ul id="squares"> </ul>
+     <button>PLAY AGAIN</button>
+    </div>
+   
 </body>
 </html>
